@@ -14,7 +14,7 @@ Then open `http://localhost:4173`. Opening `index.html` directly also works for 
 
 ## Configuration
 
-Edit `config.js` to change names, event date/time and timezone, venue text, schedule, gallery paths, audio path, and deployment URL. Before deployment, replace `https://example.com` with the final absolute HTTPS URL so Open Graph metadata resolves correctly. The static metadata in `index.html` should also be updated for crawlers that do not execute JavaScript.
+Edit `config.js` to change names, family attribution, dress guidance, guest contact, event date/time and timezone, venue text, schedule, gallery paths and captions, audio path, and deployment URL. Empty personalization fields remain hidden, so no family names or guest guidance are invented. Before deployment, replace `https://example.com` with the final absolute HTTPS URL so Open Graph metadata resolves correctly. The static metadata in `index.html` should also be updated for crawlers that do not execute JavaScript.
 
 `assets/audio/wedding-theme.mp3` is a short original synthesized ambient chord bed included as a functional placeholder. Replace it with the couple's properly licensed final track. The UI detects a missing or unplayable file and hides its control without interrupting the invitation.
 
