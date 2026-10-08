@@ -1,0 +1,1 @@
+`wedding-theme.mp3` is a short original synthesized ambient chord bed included as a functional placeholder. Replace it with the couple's properly licensed final track. The invitation detects a missing or unplayable file and keeps the music control hidden.
