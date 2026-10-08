@@ -95,13 +95,8 @@ function initRSVP() {
 }
 
 function initMotion() {
-  if (reducedMotion || !("IntersectionObserver" in window)) { $$(".reveal").forEach(el => { el.style.opacity = 1; el.style.transform = "none"; }); return; }
-  const observer = new IntersectionObserver(entries => entries.forEach(entry => {
-    if (!entry.isIntersecting) return;
-    entry.target.animate([{ opacity: 0, transform: "translateY(20px)" }, { opacity: 1, transform: "none" }], { duration: 900, easing: "cubic-bezier(.22,1,.36,1)", fill: "forwards" });
-    observer.unobserve(entry.target);
-  }), { threshold: .15 });
-  $$(".reveal").forEach(el => observer.observe(el));
+  $$(".reveal").forEach(el => { el.style.opacity = 1; el.style.transform = "none"; });
+  if (reducedMotion) return;
   let ticking = false;
   addEventListener("scroll", () => {
     if (ticking || scrollY > innerHeight * 1.2) return;
