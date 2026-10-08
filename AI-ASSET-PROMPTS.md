@@ -26,6 +26,14 @@ Aspect ratio 4:3, landscape. Atmospheric editorial still life of ivory jasmine f
 
 Aspect ratio 4:3, landscape. Ornate ivory arch reflected over midnight-teal water, distant warm lanterns and sparse jasmine. Focal arch in left third, calm text-safe water and sky on right. Match gallery 01's color grade and lens character. No people.
 
+## `gallery-03.webp`
+
+Aspect ratio 4:5, portrait. Editorial still life of an ivory invitation card with no readable text beside jasmine buds and a restrained antique-brass incense burner on carved stone. Focal objects lower left, negative space upper right, warm lantern bokeh and moonlit teal shadows. No people or logos.
+
+## `gallery-04.webp`
+
+Aspect ratio 4:5, portrait. Close architectural view of scalloped ivory arches and patterned stone screens reflected in a narrow moonlit pool, with a few floating jasmine petals and distant lanterns. Strong vertical rhythm and focal reflection through the lower center. No people or text.
+
 ## `venue-courtyard.webp`
 
 Aspect ratio 16:9, wide. Bengaluru-inspired Indo-Islamic courtyard exterior at blue hour: ivory colonnade, botanical garden, pathway lanterns, reflecting pool. Center the architecture and leave clear upper and lower areas for an overlaid venue card. Avoid implying a specific real venue.

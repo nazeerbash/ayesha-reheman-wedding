@@ -92,3 +92,43 @@ input:hover, textarea:hover { border-color: #2e5a54; }
   .section { padding-inline: max(7vw, 7rem); }
   .story { grid-template-columns: minmax(360px, .72fr) minmax(600px, 1.28fr); }
 }
+
+/* Personal details remain hidden until corresponding config values are supplied. */
+.personal-details { background: #efe5d6; text-align: center; }
+.personal-details__intro { max-width: 680px; margin: 0 auto 3rem; }
+.personal-details__grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1px; max-width: 900px; margin: auto; background: #b89a6355; }
+.personal-details__grid div { background: #f5ede1; padding: 2.5rem 1.5rem; }
+.personal-details__grid span, .guest-guidance span { display: block; margin-bottom: .65rem; color: #5b726d; font-size: .65rem; font-weight: 600; letter-spacing: .16em; text-transform: uppercase; }
+.personal-details__grid strong { font: 500 clamp(1.6rem, 3vw, 2.4rem) var(--serif); }
+.guest-guidance { display: flex; justify-content: center; gap: 3rem; margin-top: 2.5rem; }
+.guest-guidance p { margin: 0; }
+.guest-guidance a { color: inherit; text-underline-offset: .25em; }
+
+.gallery { grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: start; }
+.gallery figure { margin: 0; }
+.gallery figure:nth-child(even) { margin-top: 3rem; }
+.gallery button, .gallery figure:nth-child(2) button { width: 100%; margin: 0; aspect-ratio: 4 / 5; }
+.gallery figcaption { padding: .8rem .1rem 0; color: #536b65; font: italic 1rem var(--serif); }
+.gallery img { aspect-ratio: 4 / 5; }
+
+body.lightbox-open { overflow: hidden; }
+.lightbox { grid-template-columns: auto minmax(0, 1fr) auto; gap: clamp(.5rem, 2vw, 2rem); padding: clamp(1rem, 3vw, 3rem); }
+.lightbox figure { margin: 0; min-width: 0; text-align: center; }
+.lightbox figcaption { margin-top: 1rem; font: 400 1.05rem var(--serif); }
+.lightbox__nav { width: 3rem; height: 3rem; border: 1px solid #d4b77d88; border-radius: 50%; background: #052e2fbb; color: var(--ivory); font-size: 1.25rem; }
+.lightbox__nav:hover { background: var(--gold); color: var(--teal); }
+.lightbox__nav:focus-visible { outline: 3px solid #e7c887; outline-offset: 3px; }
+
+[aria-invalid="true"] { border-color: #8b2c22; }
+@media (max-width: 760px) {
+  .personal-details__grid { grid-template-columns: 1fr; }
+  .guest-guidance { flex-direction: column; gap: 1rem; }
+  .gallery { gap: .75rem; }
+  .gallery figure:nth-child(even) { margin-top: 2rem; }
+  .gallery figcaption { font-size: .82rem; }
+  .lightbox { grid-template-columns: 1fr 1fr; grid-template-rows: minmax(0, 1fr) auto; }
+  .lightbox figure { grid-column: 1 / -1; }
+  .lightbox__nav { grid-row: 2; justify-self: center; }
+  .lightbox__nav--prev { grid-column: 1; }
+  .lightbox__nav--next { grid-column: 2; }
+}

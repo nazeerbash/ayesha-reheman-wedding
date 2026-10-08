@@ -13,6 +13,8 @@
   <meta name="twitter:card" content="summary_large_image">
   <title>Ayesha & Reheman — The Moonlit Courtyard</title>
   <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/images/cover-courtyard.webp" as="image" fetchpriority="high">
+  <link rel="preload" href="assets/images/hero-courtyard.webp" as="image">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="refinements.css">
   <script src="config.js" defer></script>
@@ -44,12 +46,21 @@
       <img class="jasmine jasmine--right depth-layer" data-depth="0.12" src="assets/images/jasmine-right.webp" alt="" aria-hidden="true">
       <div class="hero__veil"></div>
       <div class="hero__content reveal">
-        <p class="eyebrow">Together with our families</p>
+        <p class="eyebrow" id="host-line">Together with our families</p>
         <h2 id="hero-title"><span>Ayesha</span><b>&</b><span>Reheman</span></h2>
         <p class="invitation-line">request the honour of your presence as we begin our life together in the name of Allah</p>
         <div class="hero__meta"><span>20 December 2026</span><i></i><span>Bengaluru, India</span></div>
       </div>
       <a class="scroll-cue" href="#welcome"><span>Discover</span><i aria-hidden="true"></i></a>
+    </section>
+
+    <section class="personal-details section" id="personal-details" aria-labelledby="personal-details-title" hidden>
+      <div class="personal-details__intro">
+        <p class="eyebrow">With blessings from</p>
+        <h2 id="personal-details-title">Our families</h2>
+      </div>
+      <div class="personal-details__grid" id="family-details"></div>
+      <div class="guest-guidance" id="guest-guidance"></div>
     </section>
 
     <section class="welcome section" id="welcome">
@@ -119,9 +130,9 @@
     <section class="rsvp section" aria-labelledby="rsvp-title">
       <div class="rsvp__intro reveal"><p class="eyebrow">Kindly respond</p><h2 id="rsvp-title">Will you join us?</h2><p>We would be honoured to celebrate with you. Please share your plans below.</p></div>
       <form id="rsvp-form" novalidate>
-        <div class="field"><label for="guest-name">Guest Name</label><input id="guest-name" name="guestName" autocomplete="name" required><span class="error" id="guest-name-error"></span></div>
-        <fieldset><legend>Attendance</legend><div class="radio-group"><label><input type="radio" name="attendance" value="Joyfully Accept" required><span>Joyfully Accept</span></label><label><input type="radio" name="attendance" value="Regretfully Decline"><span>Regretfully Decline</span></label></div><span class="error" id="attendance-error"></span></fieldset>
-        <div class="field"><label for="guest-count">Number of Guests</label><input id="guest-count" name="guestCount" type="number" min="1" max="10" value="1" inputmode="numeric" required><span class="error" id="guest-count-error"></span></div>
+        <div class="field"><label for="guest-name">Guest Name</label><input id="guest-name" name="guestName" autocomplete="name" aria-describedby="guest-name-error" required><span class="error" id="guest-name-error"></span></div>
+        <fieldset aria-describedby="attendance-error"><legend>Attendance</legend><div class="radio-group"><label><input type="radio" name="attendance" value="Joyfully Accept" required><span>Joyfully Accept</span></label><label><input type="radio" name="attendance" value="Regretfully Decline"><span>Regretfully Decline</span></label></div><span class="error" id="attendance-error"></span></fieldset>
+        <div class="field"><label for="guest-count">Number of Guests</label><input id="guest-count" name="guestCount" type="number" min="1" max="10" value="1" inputmode="numeric" aria-describedby="guest-count-error" required><span class="error" id="guest-count-error"></span></div>
         <div class="field field--full"><label for="message">Message for the Couple <span>(optional)</span></label><textarea id="message" name="message" rows="4" maxlength="500"></textarea></div>
         <button class="button button--light" type="submit">Share Your Response</button>
         <div class="form-status" id="form-status" role="status" tabindex="-1"></div>
@@ -134,7 +145,12 @@
     </section>
   </main>
 
-  <dialog class="lightbox" id="lightbox" aria-labelledby="lightbox-caption"><button type="button" class="lightbox__close" aria-label="Close gallery image">×</button><img src="" alt=""><p id="lightbox-caption"></p></dialog>
-  <noscript><div class="noscript">JavaScript is unavailable. All invitation details remain visible; the countdown, music, gallery lightbox, RSVP demo, and calendar download require JavaScript.</div></noscript>
+  <dialog class="lightbox" id="lightbox" aria-labelledby="lightbox-caption">
+    <button type="button" class="lightbox__close" aria-label="Close gallery image">×</button>
+    <button type="button" class="lightbox__nav lightbox__nav--prev" aria-label="Previous gallery image">←</button>
+    <figure><img src="" alt=""><figcaption id="lightbox-caption" aria-live="polite"></figcaption></figure>
+    <button type="button" class="lightbox__nav lightbox__nav--next" aria-label="Next gallery image">→</button>
+  </dialog>
+  <noscript><style>.cover{display:none!important}body{overflow:auto!important}.reveal{opacity:1!important;transform:none!important}</style><div class="noscript">JavaScript is unavailable. All invitation details remain visible; the countdown, music, gallery lightbox, RSVP demo, and calendar download require JavaScript.</div></noscript>
 </body>
 </html>
