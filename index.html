@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#062f32">
+  <meta name="description" content="The wedding invitation of Ayesha and Reheman — 20 December 2026 in Bengaluru, India.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Ayesha & Reheman | 20 December 2026">
+  <meta property="og:description" content="Join us for our Nikah and wedding celebration in Bengaluru.">
+  <meta property="og:url" content="https://example.com">
+  <meta property="og:image" content="https://example.com/assets/images/og-image.webp">
+  <meta name="twitter:card" content="summary_large_image">
+  <title>Ayesha & Reheman — The Moonlit Courtyard</title>
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="config.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body class="is-covered">
+  <a class="skip-link" href="#main">Skip to invitation</a>
+  <div class="cover" id="cover" aria-labelledby="cover-title">
+    <div class="cover__panel cover__panel--left" aria-hidden="true"></div>
+    <div class="cover__panel cover__panel--right" aria-hidden="true"></div>
+    <div class="cover__shade"></div>
+    <div class="cover__content">
+      <p class="eyebrow">The Moonlit Courtyard</p>
+      <h1 id="cover-title">Ayesha <span>&</span> Reheman</h1>
+      <p class="cover__date">20 <i>•</i> 12 <i>•</i> 2026</p>
+      <button class="button button--light" id="enter-button" type="button">Enter Our Celebration <span aria-hidden="true">→</span></button>
+    </div>
+  </div>
+
+  <button class="sound-control" id="sound-control" type="button" aria-pressed="false" aria-label="Play background music" hidden>
+    <span class="sound-bars" aria-hidden="true"><i></i><i></i><i></i></span><span class="sound-label">Music</span>
+  </button>
+  <audio id="wedding-audio" loop preload="none"></audio>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero__backdrop depth-layer" data-depth="0.08"></div>
+      <img class="jasmine jasmine--left depth-layer" data-depth="0.16" src="assets/images/jasmine-left.webp" alt="" aria-hidden="true">
+      <img class="jasmine jasmine--right depth-layer" data-depth="0.12" src="assets/images/jasmine-right.webp" alt="" aria-hidden="true">
+      <div class="hero__veil"></div>
+      <div class="hero__content reveal">
+        <p class="eyebrow">Together with our families</p>
+        <h2 id="hero-title"><span>Ayesha</span><b>&</b><span>Reheman</span></h2>
+        <p class="invitation-line">request the honour of your presence as we begin our life together in the name of Allah</p>
+        <div class="hero__meta"><span>20 December 2026</span><i></i><span>Bengaluru, India</span></div>
+      </div>
+      <a class="scroll-cue" href="#welcome"><span>Discover</span><i aria-hidden="true"></i></a>
+    </section>
+
+    <section class="welcome section" id="welcome">
+      <div class="ornament" aria-hidden="true">✦</div>
+      <div class="narrow reveal">
+        <p class="arabic-intro">Bismillahir Rahmanir Raheem</p>
+        <p class="eyebrow">In the name of Allah, the Most Gracious, the Most Merciful</p>
+        <h2>With grateful hearts</h2>
+        <p class="lead">We warmly invite our family and friends to witness our Nikah and share an evening of joy, prayer, and togetherness beneath the moonlit sky.</p>
+      </div>
+    </section>
+
+    <section class="verse section" aria-labelledby="verse-heading">
+      <div class="verse__frame reveal">
+        <p class="eyebrow" id="verse-heading">A sign of His mercy</p>
+        <blockquote>“And of His signs is this: He created for you helpmeets from yourselves that ye might find rest in them, and He ordained between you love and mercy. Lo! herein indeed are portents for folk who reflect.”</blockquote>
+        <cite>Qur’an 30:21 — Marmaduke Pickthall, <em>The Meaning of the Glorious Koran</em> (1930), public-domain English translation.</cite>
+      </div>
+    </section>
+
+    <section class="countdown section" aria-labelledby="countdown-title">
+      <p class="eyebrow">Until the courtyard welcomes you</p>
+      <h2 id="countdown-title">Our evening draws near</h2>
+      <div class="countdown__grid" id="countdown" role="timer" aria-live="off">
+        <div><strong data-unit="days">—</strong><span>Days</span></div>
+        <div><strong data-unit="hours">—</strong><span>Hours</span></div>
+        <div><strong data-unit="minutes">—</strong><span>Minutes</span></div>
+        <div><strong data-unit="seconds">—</strong><span>Seconds</span></div>
+      </div>
+    </section>
+
+    <section class="story section" aria-labelledby="story-title">
+      <div class="story__copy reveal">
+        <p class="eyebrow">A gathering of hearts</p>
+        <h2 id="story-title">One beautiful evening, shared with you</h2>
+        <p>Some moments become more meaningful in the company of those we love. As we step into this new chapter, your presence, blessings, and duas would make our celebration complete.</p>
+      </div>
+      <div class="gallery" id="gallery" aria-label="Courtyard mood gallery"></div>
+    </section>
+
+    <section class="details section" aria-labelledby="details-title">
+      <div class="event-card reveal">
+        <p class="eyebrow">Save the evening</p>
+        <h2 id="details-title">Nikah & Wedding Celebration</h2>
+        <div class="event-card__date"><strong>20</strong><span>December<br>2026</span></div>
+        <p>Sunday · 6:30 PM</p>
+        <p>Bengaluru, India</p>
+        <button class="button" id="calendar-button" type="button">Add to Calendar <span aria-hidden="true">↓</span></button>
+      </div>
+      <div class="schedule reveal">
+        <div class="schedule__heading"><div><p class="eyebrow">Order of the evening</p><h2>Schedule</h2></div><span>Timings pending confirmation</span></div>
+        <ol id="schedule-list"></ol>
+      </div>
+    </section>
+
+    <section class="venue section" aria-labelledby="venue-title">
+      <div class="venue__image" role="img" aria-label="Moonlit ivory courtyard in Bengaluru"></div>
+      <div class="venue__card reveal">
+        <p class="eyebrow">Where we gather</p>
+        <h2 id="venue-title">Bengaluru</h2>
+        <p>India</p>
+        <span class="rule"></span>
+        <p class="venue__note">Venue details will be shared soon.</p>
+      </div>
+    </section>
+
+    <section class="rsvp section" aria-labelledby="rsvp-title">
+      <div class="rsvp__intro reveal"><p class="eyebrow">Kindly respond</p><h2 id="rsvp-title">Will you join us?</h2><p>We would be honoured to celebrate with you. Please share your plans below.</p></div>
+      <form id="rsvp-form" novalidate>
+        <div class="field"><label for="guest-name">Guest Name</label><input id="guest-name" name="guestName" autocomplete="name" required><span class="error" id="guest-name-error"></span></div>
+        <fieldset><legend>Attendance</legend><div class="radio-group"><label><input type="radio" name="attendance" value="Joyfully Accept" required><span>Joyfully Accept</span></label><label><input type="radio" name="attendance" value="Regretfully Decline"><span>Regretfully Decline</span></label></div><span class="error" id="attendance-error"></span></fieldset>
+        <div class="field"><label for="guest-count">Number of Guests</label><input id="guest-count" name="guestCount" type="number" min="1" max="10" value="1" inputmode="numeric" required><span class="error" id="guest-count-error"></span></div>
+        <div class="field field--full"><label for="message">Message for the Couple <span>(optional)</span></label><textarea id="message" name="message" rows="4" maxlength="500"></textarea></div>
+        <button class="button button--light" type="submit">Share Your Response</button>
+        <div class="form-status" id="form-status" role="status" tabindex="-1"></div>
+      </form>
+    </section>
+
+    <section class="closing" aria-labelledby="closing-title">
+      <div class="closing__veil"></div>
+      <div class="closing__content reveal"><p class="eyebrow">With love and gratitude</p><h2 id="closing-title">Ayesha <span>&</span> Reheman</h2><p>Thank you for being part of our story.</p><div class="closing__date">20 · 12 · 2026</div></div>
+    </section>
+  </main>
+
+  <dialog class="lightbox" id="lightbox" aria-labelledby="lightbox-caption"><button type="button" class="lightbox__close" aria-label="Close gallery image">×</button><img src="" alt=""><p id="lightbox-caption"></p></dialog>
+  <noscript><div class="noscript">JavaScript is unavailable. All invitation details remain visible; the countdown, music, gallery lightbox, RSVP demo, and calendar download require JavaScript.</div></noscript>
+</body>
+</html>
